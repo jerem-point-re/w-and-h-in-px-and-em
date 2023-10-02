@@ -1,0 +1,28 @@
+<head>
+  <style>
+    .float {
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+    <div class="float">
+        <span id="showMeW"></span>
+        <br>
+        <span id="showMeH"></span>
+    </div>
+
+    <script>
+        function showWidth() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+
+            document.getElementById('showMeW').innerHTML = "W = "+w+"px ("+w/16+"em)";
+            document.getElementById('showMeH').innerHTML = "H = "+h+"px ("+h/16+"em)";
+          }
+        
+        setInterval(showWidth, 100);
+    </script>
+</body>
